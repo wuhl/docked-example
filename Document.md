@@ -1,7 +1,7 @@
 # Instructions
 Based on https://github.com/rails/docked and https://github.com/driftingruby/template
 
-Example Drifting Ruby #326 Dabbling with Turbo: https://www.youtube.com/watch?v=aEvvDgC_D9Q
+Example Drifting Ruby #326 Dabbling with Turbo: https://www.driftingruby.com/episodes/dabbling-with-turbo
 
 # Start Docker
 Start "Docker Desktop"
