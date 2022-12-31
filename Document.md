@@ -57,12 +57,12 @@ $ docked rails db:seed
 </li>
 ```
 
-# Start server: Foreman, Yarn and Puma
+# Start servers Foreman, Yarn and Puma
 ```
 $ docked bin/dev
 ```
 
-# Add some bradcast stuff
+# Add some broadcast stuff
 ## Add turbo stream on top in file "_project.html.erb"
 ```
 <%= turbo_stream_from project %>
