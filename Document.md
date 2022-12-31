@@ -9,7 +9,7 @@ Start "Docker Desktop"
 # If not yet done
 docker volume create ruby-bundle-cache
 
-# Alias installieren
+# Install alias
 alias docked='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 ghcr.io/rails/cli'
 
 # Create your rails app
@@ -38,7 +38,7 @@ docked rails db:seed
 <li class="nav-item me-4">
   <%= link_to "Projects", projects_path, class: 'nav-link' %>
 </li>
-
+  
 # Start server: Foreman, Yarn and Puma
 docked bin/dev
 
