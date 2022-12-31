@@ -69,7 +69,7 @@ $ docked bin/dev
 ...
 ```
 
-## And the broadcsts symbol in the model file "project.rb"
+## And the broadcasts symbol in the model file "project.rb"
 ```
 class Project < ApplicationRecord
   broadcasts
