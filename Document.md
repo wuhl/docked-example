@@ -8,30 +8,30 @@ Start "Docker Desktop"
 
 # If not yet done
 ```
-docker volume create ruby-bundle-cache
+$ docker volume create ruby-bundle-cache
 ```
 
 # Install alias
 ```
-alias docked='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 ghcr.io/rails/cli'
+$ alias docked='docker run --rm -it -v ${PWD}:/rails -v ruby-bundle-cache:/bundle -p 3000:3000 ghcr.io/rails/cli'
 ```
 
 # Create your rails app
 ```
-docked rails new myrails --skip-jbuilder --javascript esbuild --css bootstrap
+$ docked rails new myrails --skip-jbuilder --javascript esbuild --css bootstrap
 ```
 
 # Add template
 ```
-cp -R driftingruby myrails
-cd myrails
-docked rails app:template LOCATION=driftingruby/template.rb
+$ cp -R driftingruby myrails
+$ cd myrails
+$ docked rails app:template LOCATION=driftingruby/template.rb
 ```
 
 # Create projects model and database
 ```
-docked rails generate scaffold project name active:boolean
-docked rails db:migrate
+$ docked rails generate scaffold project name active:boolean
+$ docked rails db:migrate
 ```
 
 # Add some data in file "seeds.rb"
@@ -46,7 +46,7 @@ Project.create(name: "My Fifth Project", active: true)
 
 # And seed the data
 ```
-docked rails db:seed
+$ docked rails db:seed
 ```
 
 # Add menue entry in file "_navigation_links.html.erb"
@@ -59,7 +59,7 @@ docked rails db:seed
 
 # Start server: Foreman, Yarn and Puma
 ```
-docked bin/dev
+$ docked bin/dev
 ```
 
 # Add some bradcast stuff
