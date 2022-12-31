@@ -1,6 +1,6 @@
 # Instructions
-Based on https://github.com/rails/docked
-Based on https://github.com/driftingruby/template
+Based on https://github.com/rails/docked and https://github.com/driftingruby/template
+
 Example Drifting Ruby #326 Dabbling with Turbo: https://www.youtube.com/watch?v=aEvvDgC_D9Q
 
 # Start Docker
