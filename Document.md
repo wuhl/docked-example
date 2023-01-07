@@ -80,3 +80,7 @@ end
 ```
 http://localhost:3000/projects
 ```
+or connect to the machine via machine url i.e.
+ˋˋˋ
+http://192.168.178.42:3000/projects
+ˋˋˋ
