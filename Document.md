@@ -30,18 +30,18 @@ $ docked rails app:template LOCATION=driftingruby/template.rb
 
 # Create projects model and database
 ```
-$ docked rails generate scaffold project name active:boolean
+$ docked rails generate scaffold project name active:boolean start:date end:date
 $ docked rails db:migrate
 ```
 
 # Add some data in file "seeds.rb"
 ```
 ...
-Project.create(name: "My First Project", active: true)
-Project.create(name: "My Second Project", active: true)
-Project.create(name: "My Third Project", active: true)
-Project.create(name: "My Fourth Project", active: true)
-Project.create(name: "My Fifth Project", active: true)
+Project.create(name: "My First Project", active: true, start: Date.today(), end: Date.today()+10)
+Project.create(name: "My Second Project", active: true, start: Date.today(), end: Date.today()+10)
+Project.create(name: "My Third Project", active: true, start: Date.today(), end: Date.today()+10)
+Project.create(name: "My Fourth Project", active: true, start: Date.today(), end: Date.today()+10)
+Project.create(name: "My Fifth Project", active: true, start: Date.today(), end: Date.today()+10)
 ```
 
 # And seed the data
@@ -81,6 +81,6 @@ end
 http://localhost:3000/projects
 ```
 or connect to the machine via machine url i.e.
-ˋˋˋ
+```
 http://192.168.178.42:3000/projects
-ˋˋˋ
+```
